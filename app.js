@@ -25,8 +25,4 @@ app.use('/login',login);
 
 const search=require('./api/routes/search')
 app.use('/search',search);
-
-app.use('/',(req,res)=>{
-    res.status(500).json({"message":"Seems like you are lost"})
-})
 module.exports=app
